@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Book — Therapy Thingz</title>
+<meta name="description" content="A therapist's story and the frameworks behind the work — written for real humans.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="book">
+<div id="site-header"></div>
+
+<main>
+  <section class="section" style="padding-top:clamp(2.5rem,5vw,4rem)">
+    <div class="wrap book">
+      <div class="book__cover" data-reveal>
+        <!-- LOCALIZE: assets/book-cover.jpg -->
+        <img src="assets/book-cover.jpg" alt="Book cover" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22600%22&gt;&lt;rect width=%22400%22 height=%22600%22 fill=%22%23F6E8D8%22/&gt;&lt;text x=%22200%22 y=%22300%22 font-family=%22monospace%22 font-size=%2220%22 fill=%22%235B5273%22 text-anchor=%22middle%22&gt;book cover&lt;/text&gt;&lt;/svg&gt;'">
+      </div>
+      <div data-reveal>
+        <p class="eyebrow">The book</p>
+        <h1 style="font-size:var(--step-3);margin:0 0 .8rem">A therapist's story, on the page.</h1>
+        <p class="lead">The frameworks behind the work — and the human behind the frameworks. Written for real people, not textbooks.</p>
+        <blockquote>Healing happens in the present moment.</blockquote>
+        <div class="hero__cta">
+          <!-- Point at your Stripe / Gumroad / Amazon link when ready -->
+          <a class="btn btn--primary" href="#" target="_blank" rel="noopener">Buy the book</a>
+          <a class="btn btn--ghost" href="#preview">Preview a chapter</a>
+        </div>
+        <p class="form__note" style="margin-top:1rem">Digital delivery can be automated with Stripe or Gumroad — receipts and download links sent instantly on purchase.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="preview">
+    <div class="wrap">
+      <div class="section__head center" style="margin-inline:auto">
+        <p class="eyebrow" style="justify-content:center">Inside</p>
+        <h2 class="section__title">What you'll find</h2>
+      </div>
+      <div class="dir">
+        <div class="dir__card" data-reveal>
+          <span class="dir__num">Part I</span>
+          <h3>The story</h3>
+          <p>How lived experience became a lens for the clinical work.</p>
+        </div>
+        <div class="dir__card" data-reveal>
+          <span class="dir__num">Part II</span>
+          <h3>The frameworks</h3>
+          <p>The models and mental tools, explained in plain language.</p>
+        </div>
+        <div class="dir__card" data-reveal>
+          <span class="dir__num">Part III</span>
+          <h3>The practice</h3>
+          <p>Grounded, present-moment ways to put it to work.</p>
+        </div>
+        <div class="dir__card" data-reveal>
+          <span class="dir__num">Part IV</span>
+          <h3>The return</h3>
+          <p>Coming back to yourself — on the hard days too.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/script.js"></script>
+</body>
+</html>

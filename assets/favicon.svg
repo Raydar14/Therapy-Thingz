@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#2A2440"/>
+  <!-- hangtag -->
+  <g transform="rotate(-18 32 34)">
+    <path d="M22 18h14l14 14-18 18-14-14V22a4 4 0 0 1 4-4z" fill="#F79200" stroke="#2A2440" stroke-width="2.5"/>
+    <circle cx="28.5" cy="24.5" r="3.2" fill="#2A2440"/>
+  </g>
+</svg>

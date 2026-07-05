@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop — Therapy Thingz</title>
+<meta name="description" content="Stickers, hats, decks, mugs, and totes for the therapy-minded. Checkout handled securely by Stripe.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="shop">
+<div id="site-header"></div>
+
+<main>
+  <section class="hero" style="padding-bottom:1.5rem">
+    <div class="wrap">
+      <p class="eyebrow">The shop</p>
+      <h1 class="hero__title" style="font-size:var(--step-3)">Therapy thingz you can hold.</h1>
+      <p class="hero__lead">Each one a small cue to come back to yourself. Secure checkout &amp; shipping handled by Stripe.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:.5rem">
+    <div class="wrap">
+      <div class="grid grid--auto" id="shop-grid">
+        <!-- rendered by js/shop.js -->
+        <p class="tag">Loading the shelf…</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="wrap center">
+      <div class="section__head center">
+        <p class="eyebrow" style="justify-content:center">Also for sale</p>
+        <h2 class="section__title">Looking for the digital thingz?</h2>
+        <p class="section__sub">The apps, the book, and the courses each have their own home.</p>
+        <div class="hero__cta" style="justify-content:center">
+          <a class="btn btn--ghost" href="apps.html">Apps</a>
+          <a class="btn btn--ghost" href="book.html">Book</a>
+          <a class="btn btn--ghost" href="courses.html">Courses</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/script.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>
