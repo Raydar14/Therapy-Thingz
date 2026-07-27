@@ -117,8 +117,12 @@ function footerHTML(){
 document.addEventListener("DOMContentLoaded", () => {
   const active = document.body.dataset.page || "";
 
+  // ensure <main> is targetable by the skip link
+  const mainEl = document.querySelector("main");
+  if (mainEl && !mainEl.id) mainEl.id = "main";
+
   const h = document.getElementById("site-header");
-  if (h) h.innerHTML = headerHTML(active);
+  if (h) h.innerHTML = `<a class="skip-link" href="#main">Skip to content</a>` + headerHTML(active);
   const f = document.getElementById("site-footer");
   if (f) f.innerHTML = footerHTML();
 

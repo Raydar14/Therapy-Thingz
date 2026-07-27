@@ -1,7 +1,7 @@
 /* ============================================================
-   THERAPY THINGZ — shared design tokens & styles
+   THERAPY THINGZ shared design tokens & styles
    Hub for apps · book · courses · shop
-   Palette: sunlit apothecary — plum ink, warm paper,
+   Palette: sunlit apothecary plum ink, warm paper,
    marigold (Raya's signature), raspberry, grounded sage.
    Type: Newsreader (display) · Karla (body) ·
          Space Mono (hangtag / price labels = the signature)
@@ -50,6 +50,16 @@
 html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
 @media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
 
+.skip-link{
+  position:absolute; left:-9999px; top:8px; z-index:1000;
+  background:var(--ink); color:var(--paper);
+  font-family:var(--label); font-size:.78rem; letter-spacing:.14em; text-transform:uppercase;
+  padding:.7rem 1.1rem; border-radius:8px;
+  text-decoration:none;
+}
+.skip-link:focus{ left:12px; outline:2px solid var(--marigold); outline-offset:2px; }
+:focus-visible{ outline:2px solid var(--marigold); outline-offset:2px; border-radius:4px; }
+
 body{
   margin:0;
   font-family:var(--body);
@@ -86,7 +96,7 @@ img{ max-width:100%; display:block; }
 }
 .eyebrow::before{ content:""; width:26px; height:1.5px; background:var(--marigold); }
 
-/* hangtag — used for prices & category flags everywhere */
+/* hangtag used for prices & category flags everywhere */
 .hangtag{
   display:inline-flex; align-items:center; gap:.4rem;
   font-family:var(--label); font-size:.8rem; font-weight:700;

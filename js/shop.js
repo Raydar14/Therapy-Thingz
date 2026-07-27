@@ -1,8 +1,8 @@
 /* ============================================================
-   THERAPY THINGZ — shop engine
+   THERAPY THINGZ shop engine
    ------------------------------------------------------------
    HOW THE STORE WORKS ON A STATIC (GitHub Pages) SITE:
-   GitHub Pages only serves files — it can't process a payment.
+   GitHub Pages only serves files it can't process a payment.
    So each product points to a hosted checkout URL. When someone
    clicks "Add to cart / Buy", they go to a page the payment
    provider hosts (Stripe collects card + shipping; you get paid).
@@ -12,7 +12,7 @@
      2. Create a "Payment Link" for it (turn ON "collect shipping
         address" for physical items like stickers & hats)
      3. Paste that link below as `checkoutUrl`
-   Swappable: any checkout URL works here — Stripe, Gumroad,
+   Swappable: any checkout URL works here Stripe, Gumroad,
    Lemon Squeezy, Shopify Buy link, etc. Change the URL, done.
 
    Leave checkoutUrl as "" to show a disabled "Coming soon" button.
@@ -24,7 +24,7 @@ const PRODUCTS = [
     name: "Grounding Sticker Pack",
     kind: "physical",
     price: "$12",
-    blurb: "Six matte vinyl stickers — 5-4-3-2-1, box breathing, and other pocket-sized regulation cues.",
+    blurb: "Six matte vinyl stickers 5-4-3-2-1, box breathing, and other pocket-sized regulation cues.",
     img: "assets/products/grounding-stickers.jpg",
     badge: "best",
     checkoutUrl: ""      // ← paste Stripe Payment Link (shipping ON)

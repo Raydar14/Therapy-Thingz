@@ -1,0 +1,12 @@
+{
+  "name": "Therapy Thingz",
+  "short_name": "Therapy Thingz",
+  "description": "The hub for Dr. Raychel Powers' apps, book, courses, and shop.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FCF4EC",
+  "theme_color": "#FCF4EC",
+  "icons": [
+    { "src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
