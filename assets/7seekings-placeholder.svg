@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="7 Seekings — coming soon">
+  <rect width="400" height="400" fill="#FCF4EC"/>
+  <g transform="translate(200 200)" fill="none" stroke="#2A2440" stroke-linecap="round">
+    <g stroke-width="4">
+      <line x1="0" y1="-140" x2="0" y2="-116"/>
+      <line x1="0" y1="-140" x2="0" y2="-116" transform="rotate(51.4)"/>
+      <line x1="0" y1="-140" x2="0" y2="-116" transform="rotate(102.8)"/>
+      <line x1="0" y1="-140" x2="0" y2="-116" transform="rotate(154.3)"/>
+      <line x1="0" y1="-140" x2="0" y2="-116" transform="rotate(205.7)"/>
+      <line x1="0" y1="-140" x2="0" y2="-116" transform="rotate(257.1)"/>
+      <line x1="0" y1="-140" x2="0" y2="-116" transform="rotate(308.6)"/>
+    </g>
+    <circle r="90" stroke="#F79200" stroke-width="2" stroke-dasharray="2 8"/>
+  </g>
+  <text x="200" y="222" text-anchor="middle" fill="#2A2440"
+        font-family="Georgia, 'Times New Roman', serif" font-size="140" font-weight="700"
+        font-style="italic">7</text>
+  <text x="200" y="300" text-anchor="middle" fill="#2A2440"
+        font-family="ui-monospace, 'Space Mono', monospace" font-size="14"
+        letter-spacing="6">SEEKINGS</text>
+  <text x="200" y="322" text-anchor="middle" fill="#8A82A0"
+        font-family="ui-monospace, 'Space Mono', monospace" font-size="10"
+        letter-spacing="4">COMING SOON</text>
+</svg>
