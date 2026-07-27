@@ -66,10 +66,12 @@ function socialsHTML(){
   const ig = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>`;
   const tk = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.3 2 1.6 3.6 3.5 4v2.4c-1.3 0-2.6-.4-3.6-1v5.7a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v2.5a3.1 3.1 0 1 0 2.2 3V3h2.6z"/></svg>`;
   const fb = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h2.5l.5-3H14V4.5c0-.9.3-1.5 1.6-1.5H17V.4C16.6.3 15.6.2 14.5.2 12 .2 10.4 1.7 10.4 4.4V6H8v3h2.4v9H14V9z"/></svg>`;
+  const link = (url, label, svg) =>
+    (url && url !== "#") ? `<a href="${url}" aria-label="${label}" target="_blank" rel="noopener">${svg}</a>` : "";
   return `<div class="foot-socials">
-    <a href="${SITE.instagram}" aria-label="Instagram" target="_blank" rel="noopener">${ig}</a>
-    <a href="${SITE.tiktok}" aria-label="TikTok" target="_blank" rel="noopener">${tk}</a>
-    <a href="${SITE.facebook}" aria-label="Facebook" target="_blank" rel="noopener">${fb}</a>
+    ${link(SITE.instagram, "Instagram", ig)}
+    ${link(SITE.tiktok, "TikTok", tk)}
+    ${link(SITE.facebook, "Facebook", fb)}
   </div>`;
 }
 
