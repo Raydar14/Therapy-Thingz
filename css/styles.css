@@ -3,7 +3,7 @@
    Hub for apps · book · courses · shop
    Palette: sunlit apothecary — plum ink, warm paper,
    marigold (Raya's signature), raspberry, grounded sage.
-   Type: Bricolage Grotesque (display) · Figtree (body) ·
+   Type: Newsreader (display) · Karla (body) ·
          Space Mono (hangtag / price labels = the signature)
    ============================================================ */
 
@@ -24,8 +24,8 @@
   --line-2:     #E0CDB6;
 
   /* type */
-  --display: "Bricolage Grotesque", "Figtree", system-ui, sans-serif;
-  --body:    "Figtree", system-ui, -apple-system, sans-serif;
+  --display: "Newsreader", Georgia, "Times New Roman", serif;
+  --body:    "Karla", system-ui, -apple-system, sans-serif;
   --label:   "Space Mono", ui-monospace, monospace;
 
   /* scale */
@@ -62,7 +62,7 @@ body{
   overflow-x:hidden;
 }
 
-h1,h2,h3,h4{ font-family:var(--display); font-weight:800; line-height:1.02; letter-spacing:-.02em; margin:0; color:var(--ink); }
+h1,h2,h3,h4{ font-family:var(--display); font-weight:700; line-height:1.08; letter-spacing:-.01em; margin:0; color:var(--ink); font-variation-settings:"opsz" 48; }
 p{ margin:0 0 1rem; }
 a{ color:inherit; text-decoration:none; }
 img{ max-width:100%; display:block; }
