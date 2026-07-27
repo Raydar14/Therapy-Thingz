@@ -17,6 +17,9 @@ const SITE = {
   instagram: "https://instagram.com/DrRaychel",
   tiktok: "#",
   facebook: "#",
+  // --- external sites ---
+  be333: "https://be333.app",
+  drPowers: "https://drpowers.org",
   // --- primary nav ---
   nav: [
     { key: "apps",    label: "Apps",    href: "apps.html" },
@@ -92,6 +95,8 @@ function footerHTML(){
         <a href="contact.html">Contact</a>
         <a href="mailto:${SITE.email}">${SITE.email}</a>
         <a href="${SITE.phoneHref}">${SITE.phone}</a>
+        <a href="${SITE.be333}" target="_blank" rel="noopener">BE333.app ↗</a>
+        <a href="${SITE.drPowers}" target="_blank" rel="noopener">DrPowers.org ↗</a>
       </div>
     </div>
     <div class="wrap">
