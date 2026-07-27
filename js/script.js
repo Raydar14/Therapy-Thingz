@@ -1,5 +1,5 @@
 /* ============================================================
-   THERAPY THINGZ — shared site script
+   THERAPY THINGZ shared site script
    Injects the header + footer on every page, then wires up the
    sticky nav, mobile menu, and scroll reveals.
 
@@ -20,6 +20,7 @@ const SITE = {
   // --- external sites ---
   be333: "https://be333.app",
   drPowers: "https://drpowers.org",
+  bookSite: "https://marriedamurder.com",
   // --- primary nav ---
   nav: [
     { key: "apps",    label: "Apps",    href: "apps.html" },
@@ -79,7 +80,7 @@ function footerHTML(){
     <div class="wrap">
       <div class="foot-brand-col">
         <div class="foot-brand">Therapy&nbsp;Thing<span class="z">z</span></div>
-        <p>Wisdom-infused thingz for real humans — apps, a book, courses, and a shop, grounded in therapy and made with presence.</p>
+        <p>Wisdom-infused thingz for real humans apps, a book, courses, and a shop, grounded in therapy and made with presence.</p>
         ${socialsHTML()}
       </div>
       <div class="foot-col">
@@ -97,15 +98,14 @@ function footerHTML(){
         <a href="${SITE.phoneHref}">${SITE.phone}</a>
         <a href="${SITE.be333}" target="_blank" rel="noopener">BE333.app ↗</a>
         <a href="${SITE.drPowers}" target="_blank" rel="noopener">DrPowers.org ↗</a>
+        <a href="${SITE.bookSite}" target="_blank" rel="noopener">MarriedAMurder.com ↗</a>
       </div>
     </div>
     <div class="wrap">
       <div class="foot-bottom">
         <small>© ${y} Therapy Thingz</small>
         <span class="dot">•</span>
-        <small>Created by Dr. Raychel Powers, Psy.D.</small>
-        <span class="dot">•</span>
-        <small>Made in Tallahassee, FL</small>
+        <small>Created by <a href="${SITE.drPowers}" target="_blank" rel="noopener">Dr. Raychel Powers, Psy.D.</a></small>
       </div>
     </div>
   </footer>`;
