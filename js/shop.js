@@ -8,9 +8,9 @@
    provider hosts (Stripe collects card + shipping; you get paid).
 
    RECOMMENDED (you already have Stripe connected):
-     1. Stripe Dashboard → Product catalog → add product + price
+     1. Stripe Dashboard, Product catalog, add product + price
      2. Create a "Payment Link" for it (turn ON "collect shipping
-        address" for physical items like stickers & hats)
+        address" for physical items like stickers and hats)
      3. Paste that link below as `checkoutUrl`
    Swappable: any checkout URL works here Stripe, Gumroad,
    Lemon Squeezy, Shopify Buy link, etc. Change the URL, done.
@@ -18,64 +18,85 @@
    Leave checkoutUrl as "" to show a disabled "Coming soon" button.
    ============================================================ */
 
+// PRICES ARE PLACEHOLDERS. Update these to match your real pricing.
 const PRODUCTS = [
   {
-    id: "grounding-stickers",
-    name: "Grounding Sticker Pack",
-    kind: "physical",
-    price: "$12",
-    blurb: "Six matte vinyl stickers 5-4-3-2-1, box breathing, and other pocket-sized regulation cues.",
-    img: "assets/products/grounding-stickers.jpg",
-    badge: "best",
-    checkoutUrl: ""      // ← paste Stripe Payment Link (shipping ON)
-  },
-  {
-    id: "self-love-sticker",
-    name: "Self-Love Vinyl Sticker",
-    kind: "physical",
-    price: "$4",
-    blurb: "Weatherproof die-cut for your water bottle, laptop, or therapy journal.",
-    img: "assets/products/self-love-sticker.jpg",
-    badge: "",
-    checkoutUrl: ""
-  },
-  {
-    id: "dad-hat",
-    name: "Therapy Thingz Dad Hat",
+    id: "hat-therapy-thingz",
+    name: "Therapy Thingz Hat",
     kind: "physical",
     price: "$28",
-    blurb: "Embroidered low-profile cap. Soft cotton, adjustable strap, quietly wisdom-infused.",
-    img: "assets/products/dad-hat.jpg",
+    blurb: "The classic. Soft cotton, adjustable strap, quietly wisdom-infused.",
+    img: "assets/products/hat-therapy-thingz.jpg",
     badge: "best",
     checkoutUrl: ""
   },
   {
-    id: "present-tote",
-    name: "\u201CPresent Moment\u201D Tote",
+    id: "hat-dont-give-up",
+    name: "Don't Give Up Hat",
     kind: "physical",
-    price: "$22",
-    blurb: "Heavyweight canvas carry-all for books, groceries, and grounding.",
-    img: "assets/products/present-tote.jpg",
+    price: "$28",
+    blurb: "Embroidered low-profile cap. A quiet reminder in the mirror every morning.",
+    img: "assets/products/hat-dont-give-up.jpg",
     badge: "",
     checkoutUrl: ""
   },
   {
-    id: "affirmation-deck",
-    name: "Affirmation Card Deck",
+    id: "hat-worth-it",
+    name: "Worth It Hat",
     kind: "physical",
-    price: "$18",
-    blurb: "52 therapist-written self-compassion prompts. One a week, or one a hard day.",
-    img: "assets/products/affirmation-deck.jpg",
+    price: "$28",
+    blurb: "Black low-profile cap with gold embroidery. You are.",
+    img: "assets/products/hat-worth-it.jpg",
+    badge: "",
+    checkoutUrl: ""
+  },
+  {
+    id: "hat-trust-no-one",
+    name: "Trust No One Hat",
+    kind: "physical",
+    price: "$28",
+    blurb: "For the days that call for it. Black cap, embroidered.",
+    img: "assets/products/hat-trust-no-one.jpg",
+    badge: "",
+    checkoutUrl: ""
+  },
+  {
+    id: "pin-social-battery",
+    name: "Social Battery Pin",
+    kind: "physical",
+    price: "$8",
+    blurb: "Enamel pin. A wearable meter for the days when words are hard.",
+    img: "assets/products/pin-social-battery.jpg",
     badge: "best",
     checkoutUrl: ""
   },
   {
-    id: "regulation-mug",
-    name: "Regulate & Caffeinate Mug",
+    id: "pin-im-trying",
+    name: "I'm Trying Pin",
     kind: "physical",
-    price: "$16",
-    blurb: "11oz ceramic. A nervous-system reminder that fits in both hands.",
-    img: "assets/products/regulation-mug.jpg",
+    price: "$8",
+    blurb: "Enamel pin. Two words that do a lot of work in the world.",
+    img: "assets/products/pin-im-trying.jpg",
+    badge: "",
+    checkoutUrl: ""
+  },
+  {
+    id: "pin-mood-tracker",
+    name: "Mood Tracker Pin",
+    kind: "physical",
+    price: "$8",
+    blurb: "Black enamel pin. Small, honest, and worn where you can see it.",
+    img: "assets/products/pin-mood-tracker.jpg",
+    badge: "",
+    checkoutUrl: ""
+  },
+  {
+    id: "sticker-believe",
+    name: "You Are What You Believe Sticker",
+    kind: "physical",
+    price: "$6",
+    blurb: "Weatherproof die-cut vinyl for laptops, water bottles, and therapy journals.",
+    img: "assets/products/sticker-believe.jpg",
     badge: "",
     checkoutUrl: ""
   }
