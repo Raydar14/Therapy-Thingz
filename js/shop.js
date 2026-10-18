@@ -104,7 +104,7 @@ const PRODUCTS = [
 
 function productCard(p){
   const badge = p.badge === "best"
-    ? `<span class="badge badge--best">❤ Bestseller</span>` : "";
+    ? `<span class="badge badge--best">Bestseller</span>` : "";
   const buy = p.checkoutUrl
     ? `<a class="btn btn--primary btn--sm" href="${p.checkoutUrl}" target="_blank" rel="noopener">Add to cart</a>`
     : `<span class="btn btn--primary btn--sm" aria-disabled="true">Coming soon</span>`;
